@@ -59,7 +59,7 @@ const HomePage = () => {
     <h3>Home Care</h3>
     <i className="icon"><img src={homeCare}></img></i>
   </div>
-  <div className="service-card random-color4">
+  <div className="service-card random-color4" onClick={()=>navigate('/health-history')}>
     <div className="icon-background"></div>
     <h3>My Health History</h3>
     <i className="icon"><img src={HealthHistory}></img></i>

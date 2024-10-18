@@ -7,7 +7,7 @@ const Login = () => {
   const history = useNavigate ();
 
    const handleLogin = () => {
-    history('/phoneVerification'); 
+    history('/phone-verification'); 
   };
 
   return (

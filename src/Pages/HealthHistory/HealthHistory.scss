@@ -1,0 +1,67 @@
+@import "../../theme/variables.scss";
+.healthHistory{
+    margin: 0;
+    padding: 0;
+    border: none;
+    .tabs{
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 10px;
+        width: 100%;
+        background-color: $primary-color;
+        &.selected{
+            background-color: $white-color;
+            border-radius: 15px;
+            padding: 3px 10px;
+            color: $primary-color;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+            img{
+                height: 15px;
+                width: 15px;
+                margin-right: 10px;
+            }
+        }
+    }
+    box-shadow: 2px 2px 5px grey;
+}
+
+// .healthHistory {
+//     .tabs {
+//       display: flex;
+//       gap: 10px; // Add space between the tabs
+//       justify-content: center;
+//       align-items: center;
+  
+//       .tab {
+//         display: flex;
+//         align-items: center;
+//         cursor: pointer;
+//         transition: background-color 0.3s, border-radius 0.3s;
+//         padding: 10px;
+//         border-radius: 10px; // Default border radius
+  
+//         img {
+//           width: 50px;
+//           height: 50px;
+//           margin-right: 8px;
+//         }
+  
+//         &.selected {
+//           background-color: white;
+//           border: 1px solid #ddd;
+//           border-radius: 15px; // Slightly larger border radius when selected
+//           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//         }
+  
+//         .tab-name {
+//           font-size: 14px;
+//           color: #333;
+//           font-weight: bold;
+//         }
+//       }
+//     }
+//   }
+  
