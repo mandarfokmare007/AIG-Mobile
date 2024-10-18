@@ -9,45 +9,23 @@ import testTube from "../../assests/icons/Full Test Tube.svg";
 import xray from "../../assests/icons/X-ray.svg";
 import xrayDark from "../../assests/icons/X-rayDark.svg";
 import "./HealthHistory.scss";
-
-const tabs = [
-  {
-    id: 1,
-    label: "My Prescription",
-    icon: filePrescription,
-    iconDark: filePrescriptionDark,
-  },
-  {
-    id: 2,
-    label: "My Bill",
-    icon: billIcon,
-    iconDark: billIconDark,
-  },
-  {
-    id: 3,
-    label: "Lab Reports",
-    icon: testTube,
-    iconDark: testTubeDark,
-  },
-  {
-    id: 4,
-    label: "Radiology",
-    icon: xray,
-    iconDark: xrayDark,
-  },
-];
-
 const HealthHistory = () => {
-  const [selectedTab, setSelectedTab] = useState<number | null>(null);
+  const [selectedTab, setSelectedTab] = useState(0);
+  const tabs = [
+    { id: 1, label: 'Prescription', icon: filePrescription, iconDark: filePrescriptionDark },
+    { id: 2, label: 'Bill', icon: billIcon, iconDark: billIconDark },
+    { id: 3, label: 'Lab Reports', icon: testTube, iconDark: testTubeDark },
+    { id: 4, label: 'Radiology', icon: xray, iconDark: xrayDark },
+  ];
 
-  const handleTabClick = (tabId: number) => {
-    setSelectedTab(tabId);
+  const handleTabClick = (id:any) => {
+    setSelectedTab(id);
   };
-
   return (
-    <div className="health-history">
+    <div>
       <HeaderWithPatientInfo title="My Health History" />
-      <section className="tabs">
+      <div className="healthHistory">
+        <section className="tabs">
         {tabs.map((tab) => (
           <div
             key={tab.id}
@@ -62,7 +40,8 @@ const HealthHistory = () => {
             {selectedTab === tab.id && <span className="tab-label">{tab.label}</span>}
           </div>
         ))}
-      </section>
+        </section>
+      </div>
     </div>
   );
 };
