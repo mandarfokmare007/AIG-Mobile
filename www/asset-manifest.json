@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.6be82660.css",
+    "main.js": "./static/js/main.7dfe3c76.js",
+    "static/js/453.173abbba.chunk.js": "./static/js/453.173abbba.chunk.js",
+    "static/media/welcome.png": "./static/media/welcome.361370aabcb12b947553.png",
+    "static/media/HealthHistory.svg": "./static/media/HealthHistory.dcefc3c0acb3d1b0956869be550d38a6.svg",
+    "static/media/HealthTest.svg": "./static/media/HealthTest.f842f60bf6b81cf1c30be161d0f35471.svg",
+    "static/media/homeCare.svg": "./static/media/homeCare.e7342901e5732b5f0abae8a75c84c13d.svg",
+    "static/media/Appointment.svg": "./static/media/Appointment.d6097a8110a9b0578f294f384c57865d.svg",
+    "static/media/vitals.svg": "./static/media/vitals.bfbb958553f2131a29236be70c2367cb.svg",
+    "static/media/parcel.svg": "./static/media/parcel.6fb12297f1e01cd5616fedaabc916c8d.svg",
+    "static/media/blog.svg": "./static/media/blog.dc68fbc6a061deac498bb8de03ce7ab6.svg",
+    "static/media/blogLight.svg": "./static/media/blogLight.170f31c434ca18ce65edbd44fe027200.svg",
+    "static/media/today.svg": "./static/media/today.d4847f0d055d84134123e6300be985fe.svg",
+    "static/media/notification.svg": "./static/media/notification.d7cb4f400445206a33e9d84222bd59fa.svg",
+    "static/media/calenderLight.svg": "./static/media/calenderLight.5f7a50f5001269581428ee31112d5dd5.svg",
+    "static/media/cart.svg": "./static/media/cart.1c8a3d1f48f22b9fc6810ccbc5ba33e6.svg",
+    "index.html": "./index.html",
+    "static/media/notificationLight.svg": "./static/media/notificationLight.2491a32bc741647bc61e64bc9ca02c29.svg",
+    "static/media/homeLight.svg": "./static/media/homeLight.94d5f659f82703c9bff271caefbf064a.svg",
+    "static/media/home.svg": "./static/media/home.862ab940fa29ab104cec6f70732bbab3.svg",
+    "static/media/userLight.svg": "./static/media/userLight.4e1696d25cf537f078a0df7cc4b5e89f.svg",
+    "static/media/user.svg": "./static/media/user.3fd87d88926cd366b9f781903d154772.svg",
+    "main.6be82660.css.map": "./static/css/main.6be82660.css.map",
+    "main.7dfe3c76.js.map": "./static/js/main.7dfe3c76.js.map",
+    "453.173abbba.chunk.js.map": "./static/js/453.173abbba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6be82660.css",
+    "static/js/main.7dfe3c76.js"
+  ]
+}

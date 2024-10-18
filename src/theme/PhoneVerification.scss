@@ -1,0 +1,149 @@
+.verification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh; /* Full height of the viewport */
+}
+
+.phone-verification-title {
+    font-weight: 600;
+    color: black;
+}
+
+.phone-verification-text {
+    font-size: 16px; /* Small text */
+    text-align: center;
+    margin-bottom: 20px;
+    width: 88%;
+    color: grey; /* Default color for the text */
+}
+
+.phone-verification-text strong {
+    color: black; /* Set color for the strong text */
+    font-weight: bold; /* Ensure it is bold */
+}
+
+.phone-input-container {
+    margin: 20px 0;
+    width: 80%; /* Adjust width as needed */
+}
+
+.phone-number-label {
+    display: block; /* Make label a block to ensure it takes the full width */
+    margin-bottom: 10px; /* Space between label and inputs */
+    color: grey;
+}
+
+.input-container {
+    display: flex; /* Align country code and phone number in a row */
+    align-items: center; /* Center vertically */
+}
+
+.country-code-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.country-code-select {
+    padding: 10px; /* Match the padding of the phone input */
+    border: 1px solid #ccc; /* Same border as phone input */
+    border-radius: 5px; /* Same border-radius as phone input */
+    margin-right: 10px; /* Space between select and phone input */
+    flex: 0 0 auto; /* Prevents the select box from growing */
+    font-size: 16px; /* Match font size with phone input */
+}
+
+.phone-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1; /* Allow the input to take the remaining space */
+}
+
+.get-code-button {
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0060A2; /* Blue background */
+    color: white;
+    cursor: pointer;
+}
+
+.get-code-button:hover {
+    background-color: #005b8a; /* Darker blue on hover */
+}
+
+.otp-container {
+    text-align: center;
+}
+
+.otp-title {
+    font-size: 24px;
+    color: black;
+    font-weight: bold; /* Bold text */
+    width: 50%;
+    text-align: left;
+}
+
+.otp-phone-number {
+    font-size: 20px; /* Slightly larger font for phone number */
+    color: black; /* Black color for phone number */
+    display: flex;
+}
+
+.timer {
+    font-size: 20px; /* Timer font size */
+    margin: 20px 0;
+    color: #0060A2;
+}
+
+.otp-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between input boxes */
+    margin: 20px 0;
+}
+
+.otp-input {
+    width: 40px; /* Width for each input box */
+    height: 40px; /* Height for each input box */
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.otp-verification-title {
+    font-size: inherit;
+    color: grey;
+}
+
+.submit-button {
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0060A2; /* Green background */
+    color: white;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.submit-button:hover {
+    background-color: #0060A2; /* Darker green on hover */
+}
+
+.resend-text {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #555; /* You can adjust the color as needed */
+}
+
+.resend-link {
+    color: #0060A2;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer; /* To indicate it's clickable */
+}

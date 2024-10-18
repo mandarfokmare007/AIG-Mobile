@@ -1,0 +1,70 @@
+/* Container for the whole login screen */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assests/images/welcome.png'); /* Adjust the path as needed */
+    background-size: cover; /* Ensure the background image covers the whole container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+/* Logo styling */
+.logo-container {
+    margin-bottom: 20px; /* Space between logo and text/button container */
+    position: relative; /* Allow positioning within this container */
+    top: -30px; /* Move the logo container slightly above the center */
+}
+
+.logo {
+    width: 150px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Buttons container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    padding: 0 20px;
+    margin-top: 280px; /* Adjust this value to move buttons lower */
+    margin-bottom: 50px; /* Space below button container */
+    position: relative; /* Position relative to allow minor adjustments */
+    top: 20px; /* Push the button container lower */
+}
+
+.login-button,
+.guest-button {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-button {
+    background-color: #0060A2; /* Blue background for login button */
+    color: white; /* White text */
+}
+
+.guest-button {
+    background-color: #fff; /* White background for guest button */
+    color: #0060A2; /* Blue text for guest button */
+}
+
+.login-button:hover,
+.guest-button:hover {
+    opacity: 0.9; /* Change opacity on hover */
+}
+
+.access-account-message {
+    font-weight: 600; /* Adjust font size */
+    margin-bottom: 10px; /* Space between the text and the Login button */
+    color: #fff; /* Text color, adjust as needed */
+    text-align: center; /* Center the text */
+}

@@ -1,0 +1,62 @@
+// src/components/BottomNav.scss
+
+$primary-color: #005b99; // Define primary color
+$white-color: #ffffff; // Define white color
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around; // Space items evenly
+  align-items: center;
+  position: fixed; // Fixed at the bottom
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px; // Height of the nav bar
+  background-color: $primary-color; // Set background color to primary
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+
+  .nav-item {
+    position: relative; // Position for the circle
+    cursor: pointer;
+    padding: 10px;
+    color: $white-color; // Set icon color to white
+    transition: color 0.3s; // Transition for the icon color
+
+    &.active {
+      color: blue; // Color of the icon when active
+      .icon {
+        position: absolute;
+        bottom: 20px;
+        right: 0px;
+        left: -1px;
+      }
+
+      // Circle effect
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0px; // Positioning the circle above the icon
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px; // Width of the circle
+        height: 50px; // Height of the circle
+        border-radius: 50%;
+        border: 10px solid $primary-color; // Outline color
+        background-color: $white-color; // Circle background color
+        z-index: -1; // Place behind the icon
+        animation: wave-rise 0.4s forwards;
+      }
+    }
+  }
+
+  // Animation for circle
+  @keyframes wave-rise {
+    0% {
+      transform: translateX(-50%) translateY(30px); // Start small
+    }
+    100% {
+      transform: translateX(-50%) translateY(0); // Full wave visible
+    }
+  }
+}

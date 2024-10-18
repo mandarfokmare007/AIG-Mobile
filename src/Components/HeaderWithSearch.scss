@@ -1,0 +1,86 @@
+// src/components/Header.scss
+$primary-color: #005b99;
+$white-color: #ffffff;
+
+.header-container {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+//   padding: 10px 0;
+  color: $white-color;
+  border-radius: 0 0 20% 20%;
+.logoSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin: 10px;
+    width: 90%;
+    .logo>img{
+        width: 140px;
+    }
+}
+  @media (min-width: 480px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+
+  span {
+    color: red;
+  }
+
+  @media (min-width: 480px) {
+    font-size: 24px;
+  }
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fffdfd;
+  border-radius: 25px;
+  padding: 5px 5px;
+  width: 85%;
+  margin: -25px 0;
+  box-shadow: 0px 2px 4px 1px #e5e5e5;
+
+  @media (min-width: 480px) {
+    width: 60%;
+    margin: 0;
+  }
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  padding: 5px;
+  &::placeholder {
+    color: #cac9c9; // Change this to your desired color
+    opacity: 1; // You can set the opacity if needed
+  }
+}
+.cart{
+height: 30px;
+width: 30px;
+border-radius: 50%;
+background-color: aliceblue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.search-button {
+  background-color: $primary-color;
+  border: none;
+  color: $white-color;
+  padding: 10px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}

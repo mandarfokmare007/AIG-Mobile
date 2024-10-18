@@ -1,0 +1,75 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding: 20px;
+    margin: 5px;
+}
+
+.language-section,
+.branch-section {
+    width: 100%;
+    margin-bottom: 20px; /* Space between sections */
+    padding: 15px; /* Padding for sections */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: none; /* No shadow for a simple design */
+}
+
+.language-icon {
+    width: 50px; /* Adjust the icon size */
+    height: 50px;
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.preferred-language-text {
+    font-size: 18px; /* Font size for preferred language text */
+    font-weight: bold; /* Make the text bold */
+    color: black; /* Set text color to black */
+    margin: 0; /* Remove all margins for consistent spacing */
+}
+
+.language-text {
+    font-size: 16px; /* Font size for additional language text */
+    margin: 5px 0 10px; /* Small top margin, bottom margin for space */
+    color: grey;
+}
+
+.language-dropdown,
+.branch-dropdown {
+    width: 90%; /* Full width for dropdowns */
+    padding: 10px; /* Padding inside dropdowns */
+    margin-bottom: 10px; /* Space below dropdown */
+    border: 0.5px solid #ccc; /* Border color */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 14px; /* Font size for dropdown text */
+    color: grey;
+}
+
+.branch-title {
+    font-weight: bold; /* Bold title for branch section */
+    color: black; /* Bold black title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.branch-label {
+    font-size: 14px; /* Font size for branch label */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+.next-button {
+    background-color: #0060A2; /* Blue background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Change cursor on hover */
+    align-self: flex-end; /* Align button to the right */
+    margin-top: 20px; /* Increase space above the button to position it lower */
+    margin-left: auto; /* Ensure the button pushes itself to the right */
+    margin-right: 20px;
+}
+
+.next-button:hover {
+    background-color: #0060A2; /* Darker blue on hover */
+}

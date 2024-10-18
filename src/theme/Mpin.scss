@@ -1,0 +1,108 @@
+.mpin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 50px;
+    padding: 40px; /* Optional: add padding to the left for spacing */
+    gap: 6px;
+}
+
+.mpin-title {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.mpin-instruction {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: grey;
+}
+
+.mpin-input-container {
+    display: flex;
+    justify-content: flex-start; /* Align input boxes to the left */
+    margin-bottom: 20px;
+}
+
+.mpin-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.confirm-mpin-button {
+    width: 98%;
+    background-color: #0060A2; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 30px auto 0; /* Center the button horizontally */
+    display: block; /* Make it a block element to center */
+}
+
+.confirm-mpin-button:hover {
+    background-color: #0060A2; /* Darker blue on hover */
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-icon {
+    width: 50px; /* Adjust icon size as needed */
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.modal-message {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.next-button {
+    background-color: #0060A2; /* Blue background */
+    width: 98%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #0060A2; /* Darker blue on hover */
+}

@@ -1,0 +1,39 @@
+/* Header.module.css */
+
+/* Header container styling */
+.headerContainer {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #0060A2; /* Blue background */
+    padding: 20px 20px; /* Padding for top/bottom and left/right */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Logo container styling */
+.logoContainer {
+    flex: 1; /* Take available space */
+}
+
+.logo {
+    width: 120px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation container (optional, can add links here) */
+.navContainer {
+    flex: 2; /* Adjust based on how much space you want for nav links */
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+}
+
+.navItem {
+    margin-left: 20px; /* Space between navigation items */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size */
+}
+
+.navItem:hover {
+    text-decoration: underline; /* Underline on hover */
+}

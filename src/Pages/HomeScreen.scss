@@ -1,0 +1,228 @@
+// src/pages/HomePage.scss
+$light-gray: #f8f8f8;
+$white-color: #ffffff;
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 60px; /* Space for bottom nav */
+  background-color: $light-gray;
+
+  h2 {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  h3 {
+    margin-left: 20px;
+  }
+}
+
+// src/components/Services.scss
+
+$light-shades: (
+  #e0f7fa, // Light blue
+  #fce4ec, // Light pink
+  #e8f5e9, // Light green
+  #fff3e0, // Light orange
+  #f3e5f5, // Light purple
+  #e1f5fe  // Light cyan
+);
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // 3 columns layout
+    gap: 15px; // Space between the cards
+    padding: 20px;
+  
+    @media (max-width: 480px) { // Change to 1 column on mobile screens
+        grid-template-columns: repeat(3, 1fr)
+    }
+  }
+  .random-color1{
+    background-color: nth($light-shades, random(length($light-shades)));
+  }
+  .random-color2{
+    background-color: nth($light-shades, random(length($light-shades)));
+  }
+  .random-color3{
+    background-color: nth($light-shades, random(length($light-shades)));
+  }
+  .random-color4{
+    background-color: nth($light-shades, random(length($light-shades)));
+  }
+  .random-color5{
+    background-color: nth($light-shades, random(length($light-shades)));
+  }
+  .random-color6{
+    background-color: nth($light-shades, random(length($light-shades)));
+  }
+.service-card {
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: 80px; // Adjust height as needed
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+
+  h3 {
+    margin: 0;
+    font-size: 14px; // Adjust size as needed
+  }
+
+  .icon {
+    font-size: 24px; // Adjust size as needed
+    margin-top: 10px;
+    position: relative;
+    // z-index: 1;
+  }
+
+  .icon-background {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 50% 50% 0 0 ;
+    z-index: 0; // Make sure it sits behind the content
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+}
+@media (max-width: 480px) {
+    .service-card {
+      flex: 0 1 calc(33.33% - 10px); // Maintain three cards per row on mobile
+    }
+  }
+
+.doctor-card {
+  margin: 20px;
+  background-color: rgb(223, 239, 245);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.doctor-info {
+  margin-left: 10px;
+
+  h4 {
+    font-size: 14px;
+  }
+}
+.single-card {
+    display: flex;
+    flex-direction: column; // Stack elements vertically
+    align-items: center; // Center align content
+    justify-content: center; // Center align content
+    width: 100%; // Full width of the parent container
+    max-width: 100px; // Maximum width for the card
+    border-radius: 10px; // Rounded corners
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    padding: 20px; // Padding for content
+    margin: 20px; // Margin to space out cards
+  
+    // Optional: Add transition effect on hover
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+    // Scale effect on hover
+    &:hover {
+      transform: scale(1.05); // Slightly increase size on hover
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); // Increase shadow on hover
+    }
+  
+    .card-image {
+      width: 100%; // Image fills the width of the card
+      height: auto; // Maintain aspect ratio
+      border-radius: 10px; // Match card's border radius
+      margin-bottom: 15px; // Space between image and text
+    }
+  
+    .card-title {
+      margin: 0; // Remove default margin
+      font-size: 1rem; // Font size for title
+      color: #858282;
+      text-align: center; // Text color for title
+    }
+  
+   
+  }
+// src/components/Carousel.scss
+
+$primary-color: #005b99;
+$white-color: #ffffff;
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  margin: auto; // Center the carousel
+  overflow: hidden; // Hide overflowing content
+
+  .carousel-content {
+    display: flex;
+    transition: transform 0.5s ease; // Smooth transition for sliding effect
+    width: calc(100% + 80px); // Adjust width to account for gaps
+
+    // Align cards in a row
+    .carousel-card {
+      flex: 0 0 calc(100% - 10px); // Each card takes full width minus the gap
+      margin-right: 20px; // Add gap between cards
+      background-color: rgb(228, 242, 250);
+      border-radius: 10px;
+      padding: 20px;
+    //   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      opacity: 0.5; // Semi-transparent for inactive cards
+      transition: opacity 0.3s ease;
+
+      &.active {
+        opacity: 1; // Full opacity for active card
+      }
+
+      .card-image {
+        width: 90%; // Image fills the card
+        border-radius: 10px; // Match card's border radius
+        margin-bottom: 10px; // Space between image and text
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 1rem;
+        color: $primary-color;
+      }
+
+      p {
+        margin: 0;
+        color: #333;
+      }
+    }
+  }
+}
+.button{
+        background-color: $primary-color;
+        border: none;
+        color: $white-color;
+        padding: 10px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+}
