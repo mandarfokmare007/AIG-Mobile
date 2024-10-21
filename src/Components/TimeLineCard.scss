@@ -1,97 +1,98 @@
-.card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid gainsboro;
-    padding: 10px;
-    border-radius: 10px;
-    width: 95%;
-    min-width: 280px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin: 10px 0;
-
-    &__header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        &__price {
-            display: flex;
-            align-items: center;
-
-            p {
-                font-weight: 700;
-                color: #0D792A;
-            }
-
-            &__image {
-                background-color: #A8E0B7;
-                border-radius: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-left: 4px;
-
-                img {
-                    height: 16px;
-                    width: 16px;
-                }
-            }
-        }
-
-        &__negative {
-            display: flex;
-            align-items: center;
-
-            p {
-                font-weight: 700;
-                color: #EA4335;
-            }
-
-            &__negative_image {
-                background-color: #f5938a;
-                border-radius: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-left: 4px;
-
-                img {
-                    height: 16px;
-                    width: 16px;
-                }
-            }
-        }
-    }
-
-    &__other {
+.TimeLineCard {
+    .card {
         display: flex;
         flex-direction: column;
-
-        span {
-            font-weight: 700;
-            margin: 3px 0;
-        }
-
-        &__button {
+        border: 1px solid gainsboro;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin: 10px 0;
+    
+        &__header {
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: flex-end;
-
-            button {
-                background-color: #005b99;
-                color: white;
-                font-size: 12px;
-                border: none;
-                padding: 10px 20px;
-                border-radius: 6px;
-                box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+            justify-content: space-between;
+    
+            &__price {
+                display: flex;
+                align-items: center;
+    
+                p {
+                    font-weight: 700;
+                    color: #0D792A;
+                }
+    
+                &__image {
+                    background-color: #A8E0B7;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 4px;
+    
+                    img {
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+    
+            &__negative {
+                display: flex;
+                align-items: center;
+    
+                p {
+                    font-weight: 700;
+                    color: #EA4335;
+                }
+    
+                &__negative_image {
+                    background-color: #f5938a;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 4px;
+    
+                    img {
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
             }
         }
-
-        &__primary {
-            color: #005b99;
+    
+        &__other {
+            display: flex;
+            flex-direction: column;
+    
+            span {
+                font-weight: 700;
+                margin: 3px 0;
+            }
+    
+            &__button {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+    
+                button {
+                    background-color: #005b99;
+                    color: white;
+                    font-size: 12px;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 6px;
+                    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+                }
+            }
+    
+            &__primary {
+                color: #005b99;
+            }
         }
     }
 }

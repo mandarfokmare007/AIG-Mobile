@@ -1,0 +1,130 @@
+.main{
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px 10px;
+
+        &__name {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 20px;
+                font-weight: 700;
+                margin: 4px 0;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 200;
+            }
+        }
+        &__img {
+            height: 26px;
+            width: 26px;
+        }
+    }
+
+    &__line {
+        height: 2px;
+        background-color: #005b99;
+        margin: 5px 10px;
+    }
+
+    &__body {
+        &__card {
+            display: flex;
+            padding: 4px 10px;
+
+            &__left {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                span {
+                    font-size: 12px;
+                }
+
+                p {
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+
+            &__right {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                p {
+                    font-size: 12px;
+                }
+
+                &__direction {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #EA4335;
+                    }
+
+                    &__container {
+                        background-color: #f5938a;
+                        height: 20px;
+                        width: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 14px;
+                        padding: 2px;
+                        margin-left: 4px;
+
+                        img {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+
+                &__direction_correct {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #0D792A;
+                    }
+
+                    .green {
+                        background-color: #A8E0B7;
+                        height: 20px;
+                        width: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 14px;
+                        padding: 2px;
+                        margin-left: 4px;
+
+                        img {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__line {
+            height: 1px;
+            background-color: gainsboro;
+            margin: 5px 10px;
+        }
+    }
+}
