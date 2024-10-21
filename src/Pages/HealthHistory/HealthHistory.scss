@@ -2,12 +2,13 @@
 .healthHistory{
     margin: 0;
     padding: 0;
+    width: 100%;
     border: none;
     .tabs{
         display: flex;
         justify-content: space-around;
         padding: 5px 10px;
-        width: 100%;
+        // width: 100%;
         background-color: $primary-color;
         transition: transform 0.3s ease, background-color 0.3s ease;
         &:hover {

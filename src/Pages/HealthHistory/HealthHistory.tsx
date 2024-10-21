@@ -11,11 +11,12 @@ import xrayDark from "../../assests/icons/X-rayDark.svg";
 import "./HealthHistory.scss";
 import MyBills from "./MyBills";
 import MyPathology from "./MyPathologyReport";
+import { MyPrescription } from "./MyPrescription";
 const HealthHistory = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   const tabs = [
-    { id: 1, label: 'Prescription', icon: filePrescription, iconDark: filePrescriptionDark },
-    { id: 2, label: 'Bill', icon: billIcon, iconDark: billIconDark },
+    { id: 1, label: 'My Prescription', icon: filePrescription, iconDark: filePrescriptionDark },
+    { id: 2, label: 'My Bill', icon: billIcon, iconDark: billIconDark },
     { id: 3, label: 'Lab Reports', icon: testTube, iconDark: testTubeDark },
     { id: 4, label: 'Radiology', icon: xray, iconDark: xrayDark },
   ];
@@ -44,7 +45,7 @@ const HealthHistory = () => {
         ))}
         </section>
         <div>
-          {/* {selectedTab==1&&<MyPrescription></MyPrescription>} */}
+          {selectedTab==1&&<MyPrescription></MyPrescription>}
           {selectedTab==2&&<MyBills></MyBills>}
           {selectedTab==4&&<MyPathology></MyPathology>}
         </div>
