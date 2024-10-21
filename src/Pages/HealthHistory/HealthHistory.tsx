@@ -1,5 +1,6 @@
 import { useState } from "react";
 import HeaderWithPatientInfo from "../../Components/HeaderWithPatientInfo";
+import LabReports from "../../Components/LabReports";
 import billIcon from "../../assests/icons/Bill.svg";
 import billIconDark from "../../assests/icons/BillDark.svg";
 import filePrescriptionDark from "../../assests/icons/File Prescription Dark.svg";
@@ -21,7 +22,7 @@ const HealthHistory = () => {
     { id: 4, label: 'Radiology', icon: xray, iconDark: xrayDark },
   ];
 
-  const handleTabClick = (id:any) => {
+  const handleTabClick = (id: any) => {
     setSelectedTab(id);
   };
   return (
@@ -29,26 +30,31 @@ const HealthHistory = () => {
       <HeaderWithPatientInfo title="My Health History" />
       <div className="healthHistory">
         <section className="tabs">
-        {tabs.map((tab) => (
-          <div
-            key={tab.id}
-            className={`tab ${selectedTab === tab.id ? "selected" : ""}`}
-            onClick={() => handleTabClick(tab.id)}
-          >
-            <img
-              className="tab-icon"
-              alt={tab.label}
-              src={selectedTab === tab.id ? tab.iconDark : tab.icon}
-            />
-            {selectedTab === tab.id && <span className="tab-label">{tab.label}</span>}
-          </div>
-        ))}
+          {tabs.map((tab) => (
+            <div
+              key={tab.id}
+              className={`tab ${selectedTab === tab.id ? "selected" : ""}`}
+              onClick={() => handleTabClick(tab.id)}
+            >
+              <img
+                className="tab-icon"
+                alt={tab.label}
+                src={selectedTab === tab.id ? tab.iconDark : tab.icon}
+              />
+              {selectedTab === tab.id && <span className="tab-label">{tab.label}</span>}
+            </div>
+          ))}
         </section>
         <div>
           {selectedTab==1&&<MyPrescription></MyPrescription>}
           {selectedTab==2&&<MyBills></MyBills>}
           {selectedTab==4&&<MyPathology></MyPathology>}
         </div>
+        {selectedTab === 3 && (
+          <div className="SelectedTab">
+            <LabReports />
+          </div>
+        )}
       </div>
     </div>
   );
