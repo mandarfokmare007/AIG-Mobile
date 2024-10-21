@@ -8,6 +8,7 @@ import PhoneVerification from './Pages/PhoneVerification';
 import Profile from './Pages/Profile';
 import MyBills from './Pages/HealthHistory/MyBills';
 import Report from './Pages/HealthHistory/Report';
+import MyPathology from './Pages/HealthHistory/MyPathologyReport';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/health-history" element={<HealthHistory />} />
       <Route path="/myBills" element={<MyBills />} />
       <Route path="/report" element={<Report />} />
+      <Route path="/myPathology-Report" element={<MyPathology />} />
       
     </Routes>
   </Router>

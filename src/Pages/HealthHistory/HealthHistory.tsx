@@ -10,6 +10,7 @@ import xray from "../../assests/icons/X-ray.svg";
 import xrayDark from "../../assests/icons/X-rayDark.svg";
 import "./HealthHistory.scss";
 import MyBills from "./MyBills";
+import MyPathology from "./MyPathologyReport";
 const HealthHistory = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   const tabs = [
@@ -45,6 +46,7 @@ const HealthHistory = () => {
         <div>
           {/* {selectedTab==1&&<MyPrescription></MyPrescription>} */}
           {selectedTab==2&&<MyBills></MyBills>}
+          {selectedTab==4&&<MyPathology></MyPathology>}
         </div>
       </div>
     </div>
