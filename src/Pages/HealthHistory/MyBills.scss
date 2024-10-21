@@ -1,0 +1,743 @@
+.my-bills {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.my-bills .div {
+    background-color: #ffffff;
+    height: auto;
+    position: relative;
+    width: 430px;
+}
+
+.my-bills .overlap {
+    background-color: var(--style);
+    box-shadow: 0px 4px 4px #00000040;
+    height: 209px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 430px;
+}
+
+.my-bills .text-wrapper {
+    color: #ffffff;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    left: 44px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 28px;
+    white-space: nowrap;
+}
+
+.my-bills .div-2 {
+    background-color: #f5fbff;
+    border-radius: 18px;
+    height: 66px;
+    left: 23px;
+    position: absolute;
+    top: 66px;
+    width: 384px;
+}
+
+.my-bills .frame {
+    align-items: center;
+    display: inline-flex;
+    gap: 6px;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+}
+
+.my-bills .group {
+    height: 54px;
+    position: relative;
+    width: 54px;
+}
+
+.my-bills .overlap-group {
+    border-radius: 27px;
+    height: 54px;
+    position: relative;
+}
+
+.my-bills .ellipse {
+    background-color: var(--secondarys-red-light);
+    border-radius: 27px;
+    height: 54px;
+    left: 0;
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    width: 54px;
+}
+
+.my-bills .img {
+    height: 42px;
+    left: 6px;
+    object-fit: cover;
+    position: absolute;
+    top: 6px;
+    width: 42px;
+}
+
+.my-bills .div-wrapper {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    left: 81px;
+    position: absolute;
+    top: 36px;
+}
+
+.my-bills .text-wrapper-2 {
+    color: var(--primary);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 18px;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-top: -1.00px;
+    position: relative;
+    white-space: nowrap;
+    width: 81px;
+}
+
+.my-bills .text-wrapper-3 {
+    color: #000000;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 81px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+}
+
+.my-bills .chevron-down {
+    height: 18px;
+    left: 354px;
+    position: absolute;
+    top: 24px;
+    width: 18px;
+}
+
+.my-bills .forward {
+    height: 20px;
+    left: 9px;
+    position: absolute;
+    top: 29px;
+    width: 20px;
+}
+
+.my-bills .full-test-tube {
+    height: 20px;
+    left: 280px;
+    position: absolute;
+    top: 166px;
+    width: 20px;
+}
+
+.my-bills .x-ray {
+    height: 20px;
+    left: 370px;
+    position: absolute;
+    top: 166px;
+    width: 20px;
+}
+
+.my-bills .overlap-2 {
+    background-color: #dbf0ff;
+    border-radius: 25px;
+    box-shadow: 0px 2px 2px #00000040;
+    height: 32px;
+    left: 124px;
+    position: absolute;
+    top: 160px;
+    width: 92px;
+}
+
+.my-bills .text-wrapper-4 {
+    color: var(--style);
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    left: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 8px;
+    white-space: nowrap;
+}
+
+.my-bills .bill {
+    height: 14px;
+    left: 12px;
+    position: absolute;
+    top: 9px;
+    width: 14px;
+}
+
+.my-bills .file-prescription {
+    height: 20px;
+    left: 40px;
+    position: absolute;
+    top: 166px;
+    width: 20px;
+}
+
+.my-bills .overlap-3 {
+    height: 404px;
+    left: 29px;
+    position: absolute;
+    top: 120px;
+    width: 372px;
+}
+
+.my-bills .text-wrapper-5 {
+    color: #000000;
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    left: 11px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 39px;
+    white-space: nowrap;
+}
+
+.my-bills .text-wrapper-6 {
+    color: #000000;
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    left: 11px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 180px;
+    white-space: nowrap;
+}
+
+.my-bills .text-wrapper-7 {
+    color: #000000;
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    left: 11px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 322px;
+    white-space: nowrap;
+}
+
+.my-bills .hospital-wrapper {
+    background-color: #fff47b70;
+    border-radius: 17.5px;
+    height: 35px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 35px;
+}
+
+.my-bills .hospital {
+    height: 18px;
+    left: 8px;
+    position: absolute;
+    top: 9px;
+    width: 18px;
+}
+
+.my-bills .overlap-4 {
+    height: 404px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 372px;
+}
+
+.my-bills .ellipse-2 {
+    background-color: var(--style);
+    border-radius: 17px;
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: 142px;
+    width: 34px;
+}
+
+.my-bills .x-ray-2 {
+    height: 20px;
+    left: 7px;
+    position: absolute;
+    top: 149px;
+    width: 20px;
+}
+
+.my-bills .ellipse-3 {
+    background-color: #f0c025;
+    border-radius: 17px;
+    height: 34px;
+    left: 0;
+    position: absolute;
+    top: 284px;
+    width: 34px;
+}
+
+.my-bills .experiment {
+    height: 20px;
+    left: 7px;
+    position: absolute;
+    top: 291px;
+    width: 20px;
+}
+
+.my-bills .image {
+    height: 225px;
+    left: 33px;
+    object-fit: cover;
+    position: absolute;
+    top: 68px;
+    width: 307px;
+}
+
+.my-bills .rectangle {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 0px 1px #ffffff0d, 0px 2px 4px #0000001a, 0px 12px
+        28px #00000033;
+    height: 120px;
+    left: 50px;
+    position: absolute;
+    top: 0;
+    width: 322px;
+}
+
+.my-bills .rectangle-2 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 0px 1px #ffffff0d, 0px 2px 4px #0000001a, 0px 12px
+        28px #00000033;
+    height: 120px;
+    left: 50px;
+    position: absolute;
+    top: 142px;
+    width: 322px;
+}
+
+.my-bills .rectangle-3 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 0px 1px #ffffff0d, 0px 2px 4px #0000001a, 0px 12px
+        28px #00000033;
+    height: 120px;
+    left: 50px;
+    position: absolute;
+    top: 284px;
+    width: 322px;
+}
+
+.my-bills .text-wrapper-8 {
+    color: #0060A2;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    height: 18px;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: absolute;
+    top: 59px;
+    white-space: nowrap;
+}
+
+.my-bills .text-wrapper-9 {
+    color: var(--grayscale900-black);
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12.8px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 38px;
+    white-space: nowrap;
+}
+
+.my-bills .text-wrapper-10 {
+    color: var(--grayscale900-black);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 22px;
+    white-space: nowrap;
+}
+
+.my-bills .text-wrapper-11 {
+    color: #000000;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 77px;
+    white-space: nowrap;
+}
+
+.my-bills .overlap-wrapper {
+    height: 26px;
+    left: 284px;
+    position: absolute;
+    top: 81px;
+    width: 79px;
+}
+
+.my-bills .overlap-5 {
+    background-color: #0060A2;
+    border-radius: 4.91px;
+    height: 26px;
+    position: relative;
+    width: 77px;
+}
+
+.my-bills .text-wrapper-12 {
+    color: #ffffff;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    left: 11px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+    width: 54px;
+}
+
+.my-bills .overlap-group-wrapper {
+    height: 26px;
+    left: 197px;
+    position: absolute;
+    top: 81px;
+    width: 79px;
+}
+
+.my-bills .overlap-6 {
+    background-color: #ffffff;
+    border: 0.46px solid;
+    border-color: #979797;
+    border-radius: 4.91px;
+    height: 26px;
+    position: relative;
+    width: 77px;
+}
+
+.my-bills .text-wrapper-13 {
+    -webkit-text-stroke: 0.46px #000000;
+    color: var(--style);
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 8.8px;
+    font-weight: 700;
+    left: 21px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+    width: 32px;
+}
+
+.my-bills .rectangle-4 {
+    background-color: #e4404d3d;
+    border-radius: 2.35px;
+    height: 19px;
+    left: 260px;
+    position: absolute;
+    top: 23px;
+    width: 101px;
+}
+
+.my-bills .text-wrapper-14 {
+    color: #e4404d;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 8px;
+    font-weight: 700;
+    left: 279px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 27px;
+    white-space: nowrap;
+}
+
+.my-bills .cancel {
+    height: 12px;
+    left: 264px;
+    position: absolute;
+    top: 27px;
+    width: 12px;
+}
+
+.my-bills .text-wrapper-15 {
+    color: #0060A2;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    height: 18px;
+    left: 64px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: absolute;
+    top: 199px;
+    white-space: nowrap;
+}
+
+.my-bills .text-wrapper-16 {
+    color: var(--grayscale900-black);
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 177px;
+    white-space: nowrap;
+}
+
+.my-bills .text-wrapper-17 {
+    color: var(--grayscale900-black);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 158px;
+    white-space: nowrap;
+}
+
+.my-bills .group-2 {
+    height: 26px;
+    left: 284px;
+    position: absolute;
+    top: 218px;
+    width: 74px;
+}
+
+.my-bills .overlap-7 {
+    background-color: #0060A2;
+    border-radius: 4.62px;
+    height: 26px;
+    position: relative;
+    width: 72px;
+}
+
+.my-bills .text-wrapper-18 {
+    color: #ffffff;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    left: 9px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 7px;
+    white-space: nowrap;
+    width: 55px;
+}
+
+.my-bills .rectangle-5 {
+    background-color: #c2eeb25e;
+    border-radius: 4px;
+    height: 19px;
+    left: 257px;
+    position: absolute;
+    top: 159px;
+    width: 101px;
+}
+
+.my-bills .text-wrapper-19 {
+    color: #149637;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 8px;
+    font-weight: 700;
+    left: 276px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 163px;
+    white-space: nowrap;
+}
+
+.my-bills .checkmark {
+    height: 12px;
+    left: 261px;
+    position: absolute;
+    top: 163px;
+    width: 12px;
+}
+
+.my-bills .complete-blood-count {
+    color: var(--grayscale900-black);
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 64px;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 321px;
+    white-space: nowrap;
+}
+
+.my-bills .span {
+    color: #334155;
+    font-weight: 700;
+}
+
+.my-bills .text-wrapper-20 {
+    color: #334155;
+    font-family: "Arial-Regular", Helvetica;
+}
+
+.my-bills .text-wrapper-21 {
+    color: var(--grayscale900-black);
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 303px;
+    white-space: nowrap;
+}
+
+.my-bills .group-3 {
+    height: 26px;
+    left: 272px;
+    position: absolute;
+    top: 362px;
+    width: 86px;
+}
+
+.my-bills .overlap-8 {
+    background-color: #0060A2;
+    border-radius: 5.38px;
+    height: 26px;
+    position: relative;
+    width: 84px;
+}
+
+.my-bills .text-wrapper-22 {
+    color: #ffffff;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    left: 17px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 6px;
+    white-space: nowrap;
+}
+
+.my-bills .rectangle-6 {
+    background-color: #c2eeb25e;
+    border-radius: 4px;
+    height: 19px;
+    left: 257px;
+    position: absolute;
+    top: 299px;
+    width: 101px;
+}
+
+.my-bills .text-wrapper-23 {
+    color: #149637;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 8px;
+    font-weight: 700;
+    left: 276px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 303px;
+    white-space: nowrap;
+}
+
+.my-bills .checkmark-2 {
+    height: 12px;
+    left: 261px;
+    position: absolute;
+    top: 303px;
+    width: 12px;
+}
+
+.my-bills .text-wrapper-24 {
+    color: #0060A2;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    height: 18px;
+    left: 64px;
+    letter-spacing: 0;
+    line-height: 18px;
+    position: absolute;
+    top: 360px;
+    white-space: nowrap;
+}
+
+.my-bills .line {
+    height: 78px;
+    left: 17px;
+    position: absolute;
+    top: 55px;
+    width: 1px;
+}
+
+.my-bills .line-2 {
+    height: 78px;
+    left: 17px;
+    position: absolute;
+    top: 197px;
+    width: 1px;
+}
+
+.my-bills .text-wrapper-25 {
+    color: #000000;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12px;
+    font-weight: 700;
+    left: 5px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 30px;
+    white-space: nowrap;
+}

@@ -1,0 +1,80 @@
+.my-bills {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.my-bills .div {
+    background-color: #ffffff;
+    height: auto;
+    position: relative;
+    width: 388px;
+}
+
+.my-bills .text-wrapper {
+    color: #000000;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 12.6px;
+    font-weight: 700;
+    left: 61px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 40px;
+    white-space: nowrap;
+}
+
+.my-bills .image {
+    height: 533px;
+    left: 33px;
+    position: absolute;
+    top: 83px;
+    width: 324px;
+}
+
+.my-bills .text-wrapper-2 {
+    color: #0060A2;
+    font-family: "Arial-Regular", Helvetica;
+    font-size: 9px;
+    font-weight: 400;
+    left: 328px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    top: 59px;
+    white-space: nowrap;
+    width: 25px;
+}
+
+.my-bills .close {
+    height: 13px;
+    left: 347px;
+    position: absolute;
+    top: 28px;
+    width: 13px;
+}
+
+/* Updated download button styles */
+.download-button {
+    background-color: #0060A2; /* Blue background color */
+    color: white; /* White text color */
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute; /* Absolute positioning */
+    right: 30px; /* Align to the right */
+    bottom: 20px; /* Align to the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #0060A2; /* Darker blue on hover */
+}
