@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
+import { Sheet, SheetRef } from 'react-modal-sheet';
 import './TimeLineCard.scss';
 import Up from '../assests/icons/Up.svg'
 import UpRed from '../assests/icons/UpRed.svg'
@@ -21,14 +22,11 @@ const TimeLineCard = ({
     isNegative,
 }: TimeLineCardProps) => {
 
-    const [isBottomSheetVisible, setBottomSheetVisible] = useState(false);
+    const [isOpen, setOpen] = useState(false);
 
-    const showBottomSheet = () => {
-        setBottomSheetVisible(true);
-    };
-
-    const hideBottomSheet = () => {
-        setBottomSheetVisible(false);
+    const openBox = () => {
+        console.log('clicked');
+        setOpen(true);
     };
 
     return (
@@ -37,7 +35,7 @@ const TimeLineCard = ({
                 {invoice && (
                     <p className='card__header__invoice'>Invoice: #{invoice}</p>
                 )}
-                {(price !== undefined && (isNegative == undefined || isNegative === false)) && (
+                {(price !== undefined && isNegative === false) && (
                     <div className='card__header__price'>
                         <p>{price.toFixed(1)}</p>
                         <div className='card__header__price__image'>
@@ -47,7 +45,7 @@ const TimeLineCard = ({
                 )}
                 {(price !== undefined && isNegative === true) && (
                     <div className='card__header__negative'>
-                        <p onClick={showBottomSheet}>{price.toFixed(1)}</p>
+                        <p onClick={openBox}>{price.toFixed(1)}</p>
                         <div className='card__header__negative__negative_image'>
                             <img src={UpRed} alt='down arrow' />
                         </div>
@@ -64,6 +62,14 @@ const TimeLineCard = ({
                     <button>View Report</button>
                 </div>
             </div>
+
+            <Sheet isOpen={isOpen} onClose={() => setOpen(false)}>
+                <Sheet.Container>
+                    <Sheet.Header />
+                    <Sheet.Content>Hi Material</Sheet.Content>
+                </Sheet.Container>
+                <Sheet.Backdrop />
+            </Sheet>
         </div>
     );
 }
