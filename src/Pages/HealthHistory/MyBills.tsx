@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import bill from "./bill.png";
 import cancel from '../../assests/images/Cancel.png';
 // import checkmark2 from "./checkmark-2.png";
@@ -14,11 +14,17 @@ import image7 from "../../assests/images/image 7.png";
 // import image from "./image.png";
 // import line13 from "./line-13.svg";
 // import line14 from "./line-14.svg";
-import "./MyBills.scss";
+import image20 from "../../assests/images/image 20.png";
 import xRay from "../../assests/images/X-ray.png";
+import CustomModal from "../../Components/ModalPopup";
+import "./MyBills.scss";
 
 // TypeScript React component
 export const MyBills: React.FC = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
     return (
         <div className="my-bills">
             <div className="div">
@@ -50,7 +56,7 @@ export const MyBills: React.FC = () => {
 
                         <div className="overlap-wrapper">
                             <div className="overlap-5">
-                                <div className="text-wrapper-12">View Bill</div>
+                                <div className="text-wrapper-12" onClick={openModal}>View Bill</div>
                             </div>
                         </div>
 
@@ -71,7 +77,7 @@ export const MyBills: React.FC = () => {
 
                         <div className="group-2">
                             <div className="overlap-7">
-                                <div className="text-wrapper-18">View Bill</div>
+                                <div className="text-wrapper-18"  onClick={openModal}>View Bill</div>
                             </div>
                         </div>
 
@@ -89,7 +95,7 @@ export const MyBills: React.FC = () => {
 
                         <div className="group-3">
                             <div className="overlap-8">
-                                <div className="text-wrapper-22">View Bill</div>
+                                <div className="text-wrapper-22"  onClick={openModal}>View Bill</div>
                             </div>
                         </div>
 
@@ -105,8 +111,9 @@ export const MyBills: React.FC = () => {
                     {/* <img className="line-2" alt="Line" src={line14} /> */}
                 </div>
 
-                <div className="text-wrapper-25">Aug 2024</div>
+                <div className="Date">Aug 2024</div>
             </div>
+            <CustomModal isOpen={isModalOpen} onRequestClose={closeModal} image={image20} title="Bill Details"/>
         </div>
     );
 };

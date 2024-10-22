@@ -4,11 +4,12 @@ import image20 from "../../assests/images/image 20.png";
 import "./Report.scss";
 
 
-const Report: React.FC = (): JSX.Element => {
+const Report: React.FC = ({title}:any): JSX.Element => {
+
     return (
         <div className="my-bills">
             <div className="div">
-                <div className="text-wrapper">Bill Details</div>
+                <div className="text-wrapper">{title}</div>
 
                 <img className="image" alt="Bill Preview" src={image20} />
 

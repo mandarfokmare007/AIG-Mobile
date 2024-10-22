@@ -46,12 +46,18 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@types/react-modal": "^3.16.3",
     "cordova-android": "^13.0.0",
-    "cordova-browser": "^7.0.0"
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-dialogs": "^2.0.2",
+    "react-modal": "^3.16.1"
   },
   "cordova": {
     "platforms": [
       "browser"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-dialogs": {}
+    }
   }
 }

@@ -1,9 +1,9 @@
-import React, { useRef, useState } from 'react'
-import { Sheet, SheetRef } from 'react-modal-sheet';
-import './TimeLineCard.scss';
-import Up from '../assests/icons/Up.svg'
-import UpRed from '../assests/icons/UpRed.svg'
+import { useState } from 'react';
+import { Sheet } from 'react-modal-sheet';
+import Up from '../assests/icons/Up.svg';
+import UpRed from '../assests/icons/UpRed.svg';
 import BottomSheet from './BottomSheet';
+import './TimeLineCard.scss';
 
 export interface TimeLineCardProps {
     invoice?: string;
@@ -12,6 +12,7 @@ export interface TimeLineCardProps {
     patientId?: string;
     doctorName?: string;
     isNegative?: boolean;
+    openModal:any
 }
 
 const TimeLineCard = ({
@@ -21,6 +22,7 @@ const TimeLineCard = ({
     patientId,
     doctorName,
     isNegative,
+    openModal
 }: TimeLineCardProps) => {
 
     const [isOpen, setOpen] = useState(false);
@@ -30,7 +32,7 @@ const TimeLineCard = ({
     };
 
     const showDialog = () => {
-        console.log('show');
+        openModal()
     }
 
     return (
@@ -68,7 +70,7 @@ const TimeLineCard = ({
                             <button onClick={showDialog}>View Report</button>
                         )}
                         {isNegative === true && (
-                            <button>View Report</button>
+                            <button onClick={showDialog}>View Report</button>
                         )}
                     </div>
                 </div>

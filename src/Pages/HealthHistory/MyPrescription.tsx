@@ -1,16 +1,9 @@
-// import bill from "./bill.png";
-// import ellipse7 from "./ellipse-7.png";
-// import filePrescription from "./file-prescription.svg";
-// import forward from "./forward.png";
-// import fullTestTube from "./full-test-tube.png";
-// import image7 from "./image-7.png";
-// import image from "./image.svg";
-// import line16 from "./line-16.svg";
-// import line17 from "./line-17.svg";
+
+import { useState } from "react";
 import calender from "../../assests/icons/calender.svg";
+import image20 from "../../assests/images/image 20.png";
+import CustomModal from "../../Components/ModalPopup";
 import "./MyPrescription.scss";
-// import vector3 from "./vector-3.svg";
-// import xRay from "./x-ray.png";
 
 export const MyPrescription = (): JSX.Element => {
   const data = [
@@ -36,6 +29,10 @@ export const MyPrescription = (): JSX.Element => {
       date: "27",
     },
   ];
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <div className="my-precrtiption">
       <div className="Date">Aug 2024</div>
@@ -66,7 +63,7 @@ export const MyPrescription = (): JSX.Element => {
                   </div>
                 </div>
                   <div className="Btn">
-                    <button>View Prescription</button>
+                    <button onClick={openModal}>View Prescription</button>
                   </div>
                 {/* </div> */}
               
@@ -75,6 +72,8 @@ export const MyPrescription = (): JSX.Element => {
           </>
         );
       })}
+           <CustomModal isOpen={isModalOpen} onRequestClose={closeModal} image={image20} title="Prescription"/>
     </div>
+
   );
 };

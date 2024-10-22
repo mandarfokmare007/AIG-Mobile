@@ -1,7 +1,7 @@
 // src/pages/HomePage.js
 import { useEffect, useState } from 'react';
 import { BottomNav } from '../Components/BottomNav';
-import Header from '../Components/Header';
+import { HeaderWithSearch } from '../Components/HeaderWithSearch';
 import AIGLogo from '../assests/images/Logo.png';
 import doctorImg from "../assests/images/doctor.png";
 
@@ -35,7 +35,7 @@ const HomePage = () => {
     }, [items.length]);
   return(
   <>
-    <Header />
+    <HeaderWithSearch />
     <div className='container'>
     <h2 style={{ marginLeft: '20px', fontSize: '18px' }}>Our Services</h2>
     <div className="services-grid">

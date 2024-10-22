@@ -14,7 +14,7 @@ import MyBills from "./MyBills";
 import MyPathology from "./MyPathologyReport";
 import { MyPrescription } from "./MyPrescription";
 const HealthHistory = () => {
-  const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(1);
   const tabs = [
     { id: 1, label: 'My Prescription', icon: filePrescription, iconDark: filePrescriptionDark },
     { id: 2, label: 'My Bill', icon: billIcon, iconDark: billIconDark },

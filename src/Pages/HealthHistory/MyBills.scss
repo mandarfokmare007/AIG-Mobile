@@ -4,6 +4,11 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    .vertical-line {
+        border-left: 2px dotted #bdb8b8; /* Dotted line style */
+        height: 100%; /* Line height */
+        margin: 5px 0 0 0; /* Optional margin */
+      }
 }
 
 .my-bills .div {

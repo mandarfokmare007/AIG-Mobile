@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import backIcon from '../assests/icons/Forward.svg';
 import chevronIcon from '../assests/icons/chevron-down.svg';
 import patientPic from '../assests/images/patientPic.png';
@@ -7,10 +8,11 @@ const HeaderWithPatientInfo = ({ title, patientInfo }: any) => {
     name: "Manjunath",
     id: "UHIDAIG.1234"
   }
+  const navigate = useNavigate()
   return (
     <>
       <div className="HeaderContainer">
-        <div className='titleContainer'><img src={backIcon}></img><h4>{title}</h4></div>
+        <div className='titleContainer'><img src={backIcon} onClick={()=>navigate('/home')}></img><h4>{title}</h4></div>
         <div className='patientCard'>
           <div className='patientImg'>
             <img src={patientPic}></img>
@@ -20,7 +22,7 @@ const HeaderWithPatientInfo = ({ title, patientInfo }: any) => {
             </div>
           </div>
           <div>
-            <img src={chevronIcon}></img>
+            <img src={chevronIcon} ></img>
           </div>
         </div>
       </div>

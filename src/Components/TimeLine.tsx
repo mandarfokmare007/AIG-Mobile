@@ -1,9 +1,11 @@
-import React from 'react'
-import './TimeLine.scss';
+import { useState } from 'react';
+import Experiment from '../assests/icons/Experiment.png';
 import Hospital from '../assests/icons/Hospital.png';
 import XRAY from '../assests/icons/X-ray.png';
-import Experiment from '../assests/icons/Experiment.png';
-import TimeLineCard, { TimeLineCardProps } from './TimeLineCard';
+import image from "../assests/images/Full Body MRI - Sample Report_page-0001 1.png";
+import CustomModal from './ModalPopup';
+import './TimeLine.scss';
+import TimeLineCard from './TimeLineCard';
 
 const reportData = [
     {
@@ -31,13 +33,19 @@ const reportData = [
 ];
 
 const TimeLine = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
     return (
         <div>
+               <div className="TimeLineDate">Aug 2024</div>
             <div className="timeline">
+        
                 <div className="timeline__header">
-                    <p className='timeline__header__date'>
+                    {/* <p className='timeline__header__date'>
                         Aug 2024
-                    </p>
+                    </p> */}
                 </div>
 
                 <div className="timeline__card">
@@ -58,6 +66,7 @@ const TimeLine = () => {
                             patientId={reportData[0].patientId}
                             doctorName={reportData[0].doctorName}
                             isNegative={reportData[0].isNegative}
+                            openModal={openModal}
                         />
                     </div>
                 </div>
@@ -80,6 +89,8 @@ const TimeLine = () => {
                             patientId={reportData[1].patientId}
                             doctorName={reportData[1].doctorName}
                             isNegative={reportData[1].isNegative}
+                            openModal={openModal}
+
                         />
                     </div>
                 </div>
@@ -102,10 +113,12 @@ const TimeLine = () => {
                             patientId={reportData[2].patientId}
                             doctorName={reportData[2].doctorName}
                             isNegative={reportData[2].isNegative}
+                            openModal={openModal}
                         />
                     </div>
                 </div>
             </div>
+            <CustomModal isOpen={isModalOpen} onRequestClose={closeModal} image={image} title="Report Details"/>
         </div>
     )
 }

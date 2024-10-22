@@ -1,20 +1,26 @@
-import React from "react";
+import { useState } from "react";
 // import bill from "./bill.png";
 
 import experiment from "../../assests/images/Experiment.png";
 import hospital from "../../assests/images/Hospital.png";
 // import line16 from "./line-16.svg";
 // import line17 from "./line-17.svg";
-import "./MyPathologyReport.scss";
+import image from "../../assests/images/Full Body MRI - Sample Report_page-0001 1.png";
 import xRay from "../../assests/images/X-ray.png";
+import CustomModal from "../../Components/ModalPopup";
+import "./MyPathologyReport.scss";
 
 
  const MyPathology = (): JSX.Element => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
     return (
         <div className="my-pathology">
             <div className="div">
             
-                <div className="text-wrapper-5">Aug 2024</div>
+                <div className="Date">Aug 2024</div>
 
                 <div className="overlap-3">
                     <div className="text-wrapper-6">UHIDAIG.1234</div>
@@ -27,7 +33,7 @@ import xRay from "../../assests/images/X-ray.png";
 
                     <div className="overlap-wrapper">
                         <div className="overlap-4">
-                            <div className="text-wrapper-9">View Report</div>
+                            <div className="text-wrapper-9" onClick={openModal}>View Report</div>
                         </div>
                     </div>
                 </div>
@@ -41,7 +47,7 @@ import xRay from "../../assests/images/X-ray.png";
 
                     <div className="overlap-group-wrapper">
                         <div className="overlap-4">
-                            <div className="text-wrapper-12">View Report</div>
+                            <div className="text-wrapper-12" onClick={openModal}>View Report</div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +61,7 @@ import xRay from "../../assests/images/X-ray.png";
 
                     <div className="group-2">
                         <div className="overlap-4">
-                            <div className="text-wrapper-9">View Report</div>
+                            <div className="text-wrapper-9" onClick={openModal}>View Report</div>
                         </div>
                     </div>
                 </div>
@@ -82,6 +88,7 @@ import xRay from "../../assests/images/X-ray.png";
 
                 <img className="line-2" alt="Line" src={line17} /> */}
             </div>
+            <CustomModal isOpen={isModalOpen} onRequestClose={closeModal} image={image} title="Report Details"/>
         </div>
     );
 };
